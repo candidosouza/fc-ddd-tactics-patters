@@ -1,0 +1,5 @@
+{
+  "hoolks": {
+    "pre-commit": "lint-staged"
+  }
+}
