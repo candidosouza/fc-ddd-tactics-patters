@@ -1,2 +1,4 @@
-# fc-ddd-tactics-patters
-Full Cycle DDD: Modelagem Tática e Patterns
+# Full Cycle DDD: Modelagem Tática e Patterns
+
+Repositório curso [FullCycle](https://fullcycle.com.br/)
+
