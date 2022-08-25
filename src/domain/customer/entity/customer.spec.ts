@@ -1,7 +1,7 @@
 import Address from "../value-object/address";
 import Customer from "./customer";
 
-describe("Customer unit tests", () => {
+describe("Customer tests", () => {
   it("should throw error when id is empty", () => {
     expect(() => {
       let customer = new Customer("", "John");
