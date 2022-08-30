@@ -65,4 +65,14 @@ describe("Product repository test", () => {
       price: productFound.price,
     })
   })
+
+  it ("should find all products", async () => {
+    const productRepository = new ProductRepository();
+    const product = new Product("1", "Product 1", 100);
+    await productRepository.create(product);
+    const product2 = new Product("2", "Product 2", 200);
+    await productRepository.create(product2);
+    const products = await productRepository.findAll();
+    expect(products.length).toBe(2);
+  })
 })
