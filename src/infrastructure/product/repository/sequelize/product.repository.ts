@@ -11,7 +11,14 @@ export default class ProductRepository implements ProductRepositoryInterface {
     })
   } 
   async update(product: Product): Promise<void> {
-    throw new Error("Method not implemented.")
+    await ProductModel.update({
+      name: product.name,
+      price: product.price
+    }, {
+      where: {
+        id: product.id
+      }
+    })
   }
   async find(id: string): Promise<Product> {
     throw new Error("Method not implemented.")
