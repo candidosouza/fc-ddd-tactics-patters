@@ -55,7 +55,7 @@ describe('Customer Handler Unit Tests', () => {
     expect(spyConsoleLog).toHaveBeenCalledWith(
       `Endereço do cliente: ${customer.id}, ${
         customer.name
-      } alterado para: ${customer.Address.toString()}`
+      } alterado: ${customer.Address.toString()}`
     )
   })
 })
